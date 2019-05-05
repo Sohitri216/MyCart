@@ -4,6 +4,7 @@ import Header from './components/abstract/Header';
 import Footer from './components/abstract/Footer';
 import ItemList from './components/ItemList';
 import Details from './components/pages/Details';
+import AboutUs from './components/pages/AboutUs';
 import uuid from 'uuid';
 import './App.css';
 
@@ -16,30 +17,30 @@ class App extends Component {
       id: uuid.v4(),
       name: 'Shirt',
       price: '500',
-      currency: 'INR',
       img: '',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      visited:'false'
     }, {
       id: uuid.v4(),
       name: 'Shorts',
       price: '700',
-      currency: 'INR',
       img: '',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      visited:'false'
     }, {
       id: uuid.v4(),
       name: 'Hat',
       price: '100',
-      currency: 'INR',
       img: '',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      visited:'false'
     }, {
       id: uuid.v4(),
       name: 'Watch',
       price: '1200',
-      currency: 'INR',
       img: '',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      visited:'false'
     }]
   }
 
@@ -49,12 +50,13 @@ class App extends Component {
         <div className="App">
         <Header/>
           <div className="container wrapper-container">
-            <Route exact path="/" render={props => (
+            <Route exact path="/list" render={props => (
               <React.Fragment>
                 <ItemList items={this.state.items} />
               </React.Fragment>
             )} />
-            <Route path="/details" component={Details} />
+            <Route path="/about-us" component={AboutUs} />
+            <Route path="/details/:id" component={Details} />
           </div>
           <Footer/>
         </div>
