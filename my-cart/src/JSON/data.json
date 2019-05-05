@@ -1,0 +1,25 @@
+{
+
+    "items": [{
+        "name": "Shirt",
+        "price": "500",
+        "img": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }, {
+        "name": "Shorts",
+        "price": "700",
+        "img": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }, {
+        "name": "Hat",
+        "price": "100",
+        "img": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }, {
+        "name": "Watch",
+        "price": "1200",
+        "img": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }]
+
+}
